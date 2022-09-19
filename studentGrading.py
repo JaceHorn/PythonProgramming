@@ -33,20 +33,20 @@ elif total>77:
 elif total>74:
     print("letter grade: C")
     print("grade point: 2.000")
-elif total>70:
+elif total>=70:
     print("letter grade: C-")
     print("grade point: 1.667")
-elif total>65:
+elif total>=65:
     print("letter grade: D+")
     print("grade point: 1.333")
     print("unsatisfactory performance")
-elif total>60:
+elif total>=60:
     print("letter grade: D")
     print("grade point: 1.000")
 elif total>55:
     print("letter grade: D-")
     print("grade point: 0.667")
-else:
+elif total<54.99:
     print("letter grade: F")
     print("grade point: 0.000")
     print("failing performance")
