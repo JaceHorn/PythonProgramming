@@ -7,21 +7,23 @@ Last Modified: 9/30/2022 8:17:00
 
 """
 print("Welcome to Mathematical Operations")
-print(" 1 Odd Numbers\n 2 Even Numbers\n 3 Prime Numbers\n 4 Perfect Numbers\n 5 Palindrome Numbers")
 choice= int(input("Select an Operation by Entering a Number: \t"))
 match choice:
+
     case 1:
         print("Print odd numbers from first 100 natural numbers")
-        for i in range(0, 100):
+        for i in range(0,101):
             if (i%2!=0):
                 print(i, end=' ')
 
+match choice:
     case 2:
         print("Print even numbers from first 100 natural numbers")
         for i in range(0,101):
             if (i%2==0):
                 print(i, end=' ')
 
+match choice:
     case 3:
         print("Print prime numbers from first 100 natural numbers")
         counter=0 #intializing counter variable to 0
@@ -33,6 +35,7 @@ match choice:
                         print(n, end=' ') #printing if the number is prime
                         counter=0
 
+match choice:
     case 4:
         sum=0
         check=0
@@ -46,7 +49,7 @@ match choice:
                         print(n, end=' ')
                         sum=0
 
-
+match choice:
     case 5:
         print("Print Palindrome numbers")
         number=int(input("Please Enter your number: \t"))
@@ -59,5 +62,5 @@ match choice:
             number==int(reverse)
             if originalNumber==reverse:
                 print(originalNumber,"is a Palindrome Number")
-        else:
+            else:
                 print(originalNumber, "not a Palindrome number")
